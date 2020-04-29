@@ -58,12 +58,12 @@ style:
       url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
       weight: normal
       style: normal
-    # codefont:
-    #   name: 'Monaco'
-    #   url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/Monaco/Monaco.ttf
-    #   weight: normal
-    #   style: normal
-  # color:
+    codefont:
+      name: 'Source Code Pro'
+      url: https://cdn.jsdelivr.net/npm/source-code-pro@2.30.2/TTF/SourceCodePro-Regular.ttf
+      weight: normal
+      style: normal
+  color:
   #   site: '#21232F' # Website background color
   #   site_inner: '#fff' # Text color inside the website background
   #   card: '#444' # Card background color
@@ -73,7 +73,7 @@ style:
   #   hover: '#ff5722' # Link highlight color
   #   inner: '#333' # Text color inside the button
   #   block: '#555' # Block color
-  #   inlinecode: yellow # Inline code color
+    inlinecode: '#ba7b00' # Inline code color
   #   codeblock: '#555' # Codeblock color
   #   p: '#ccc' # Paragraph color
 
@@ -84,31 +84,31 @@ style:
 cover:
   scheme: blog # docs, blog
   display:
-    home: true
-    archive: true
+    home: false
+    archive: false
     others: false # can be written in front-matter 'cover: true'
   logo: # https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/256/google_logo.png
   title: 水明
   subtitle: '下次一定'
   search: # search bar placeholder
   features:
-    - name: 文档
-      icon: fas fa-book
-      url: https://volantis.js.org/getting-started/
-    - name: 博文
-      icon: fas fa-rss
-      url: https://volantis.js.org/archives/
-    - name: 示例
-      icon: fas fa-play-circle
-      url: https://volantis.js.org/examples/
-    - name: 源码
-      icon: fas fa-file-code
-      url: https://github.com/xaoxuu/hexo-theme-volantis/
-      rel: external nofollow noopener noreferrer
-      target: _blank
-    - name: 鸣谢
-      icon: fas fa-handshake
-      url: https://volantis.js.org/contributors/
+    # - name: 文档
+    #   icon: fas fa-book
+    #   url: https://volantis.js.org/getting-started/
+    # - name: 博文
+    #   icon: fas fa-rss
+    #   url: https://volantis.js.org/archives/
+    # - name: 示例
+    #   icon: fas fa-play-circle
+    #   url: https://volantis.js.org/examples/
+    # - name: 源码
+    #   icon: fas fa-file-code
+    #   url: https://github.com/xaoxuu/hexo-theme-volantis/
+    #   rel: external nofollow noopener noreferrer
+    #   target: _blank
+    # - name: 鸣谢
+    #   icon: fas fa-handshake
+    #   url: https://volantis.js.org/contributors/
 
 
 # Navigation Bar
@@ -116,7 +116,7 @@ navbar:
   logo: # choose [img] or [icon + title]
     img:
     icon:
-    title:
+    title: 水明
   menu:
     # The following can be written in `blog/source/_data/menu.yml`
     # This menu will be displayed on the laptop or desktop.
@@ -172,7 +172,7 @@ layout:
     # 列表类页面的侧边栏
     sidebar: [blogger, category, tagcloud, qrcode]
     # read more button
-    readmore: Read More <i class="fas fa-chevron-right"></i>
+    readmore: 阅读全文 <i class="fas fa-chevron-right"></i>
   # 页面布局
   on_page:
     # 文章页面主体元素，你也可以在页面的Front-matter中设置
@@ -188,7 +188,7 @@ layout:
   # 文章布局，参数继承自 on_page
   on_post:
     # 文章页脚，自动在每一篇文章末尾添加
-    article_footer: [copyright, donate]
+    article_footer: [copyright]
   # 其他的页面布局暂时等于 on_list
 
 
@@ -198,7 +198,7 @@ meta:
   title: # 暂无配置
   # 默认文章作者（可在front-matter中覆盖）
   author:
-    avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
+    avatar: /images/avatars/avatar.jpg
     name: 水明
     url: https://walterbright.cc
   # 文章创建日期
@@ -276,10 +276,10 @@ widget:
   blogger:
     class: blogger
     display: [desktop] # [desktop, mobile]
-    avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
-    title:
-    subtitle:
-    jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
+    avatar: /images/avatars/walterbright.cc.jpg
+    title: 水明
+    subtitle: 咕咕咕
+    # jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
     social: true
   # ---------------------------------------
   # toc widget (valid only in articles)
@@ -362,7 +362,7 @@ footer:
       url: http://www.gitnavi.com/u/walterb/
   copyright: '[Copyright © 2019-2020 水明](https://walterbright.cc)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
-  br: '<br>'
+  # br: '<br>'
 
 
 ############################### SEO ###############################
@@ -409,7 +409,7 @@ plugins:
   busuanzi: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
 
   # npm i --save hexo-wordcount
-  wordcount: #true
+  wordcount: true
 
   ######## Plugins for ...
   # Button Ripple Effect
@@ -470,7 +470,7 @@ plugins:
 comments:
   title: <i class='fas fa-comments'></i> 评论
   subtitle:
-  service: valine # valine, disqus, gitalk, livere
+  service: disqus # valine, disqus, gitalk, livere
   valine:
     appId: # your appId
     appKey: # your appKey
