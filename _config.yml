@@ -62,29 +62,12 @@ style:
       url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
       weight: normal
       style: normal
-<<<<<<< HEAD
     codefont:
       name: 'Source Code Pro'
       url: https://cdn.jsdelivr.net/npm/source-code-pro@2.30.2/TTF/SourceCodePro-Regular.ttf
       weight: normal
       style: normal
   color:
-=======
-    bodyfont:
-      fontfamily: 'UbuntuMono, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
-      name: 'UbuntuMono'
-      url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
-      weight: normal
-      style: normal
-      offset: 0.1rem # Correct baseline for zh-CN
-    codefont:
-      fontfamily: 'Menlo, UbuntuMono, Monaco'
-      # name: 'Monaco'
-      # url: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-fonts/Monaco/Monaco.ttf
-      # weight: normal
-      # style: normal
-  # color:
->>>>>>> fdb5d816088771510c8b48d921654fc422215d17
   #   site: '#21232F' # Website background color
   #   site_inner: '#fff' # Text color inside the website background
   #   site_footer: '#666' # Footer text color inside the website background
@@ -95,11 +78,7 @@ style:
   #   hover: '#ff5722' # Link highlight color
   #   inner: '#333' # Text color inside the button
   #   block: '#555' # Block color
-<<<<<<< HEAD
     inlinecode: '#ba7b00' # Inline code color
-=======
-  #   inlinecode: '#555' # Inline code color
->>>>>>> fdb5d816088771510c8b48d921654fc422215d17
   #   codeblock: '#555' # Codeblock color
   #   p: '#ccc' # Paragraph color
 
@@ -180,7 +159,7 @@ layout:
   # 页面布局
   on_page:
     # 文章页面主体元素，你也可以在页面的Front-matter中设置
-    body: [article, comments]
+    body: [article]
     # 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示
     # 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示
     # 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）
@@ -192,11 +171,7 @@ layout:
   # 文章布局，参数继承自 on_page
   on_post:
     # 文章页脚，自动在每一篇文章末尾添加
-<<<<<<< HEAD
     article_footer: [copyright]
-=======
-    article_footer: [references, related_repos, copyright, donate]
->>>>>>> fdb5d816088771510c8b48d921654fc422215d17
   # 其他的页面布局暂时等于 on_list
 
 
@@ -285,21 +260,11 @@ widget:
   # blogger info widget
   blogger:
     class: blogger
-<<<<<<< HEAD
     display: [desktop] # [desktop, mobile]
     avatar: /images/avatars/walterbright.cc.jpg
     title: 水明
     subtitle: 咕咕咕
     # jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
-=======
-    display: [desktop, mobile] # [desktop, mobile]
-    avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
-    shape: rectangle # circle, rectangle
-    url: /about/
-    title:
-    subtitle:
-    jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
->>>>>>> fdb5d816088771510c8b48d921654fc422215d17
     social: true
   # ---------------------------------------
   # toc widget (valid only in articles)
@@ -513,11 +478,7 @@ plugins:
 comments:
   title: <i class='fas fa-comments'></i> 评论
   subtitle:
-<<<<<<< HEAD
   service: disqus # valine, disqus, gitalk, livere
-=======
-  service: valine # valine, minivaline, disqus, gitalk, livere
->>>>>>> fdb5d816088771510c8b48d921654fc422215d17
   valine:
     appId: dogUA2FSKGTo029M1SEwGROT-MdYXbMMI # your appId
     appKey: u0NdtQ8nvHoMdJPSYqm1LRxE # your appKey
